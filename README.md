@@ -13,10 +13,15 @@ Execute the below command for pushing the image to ECR, this command is to get t
 aws ecr get-login-password --region {region} | docker login --username AWS --password-stdin {account}.dkr.ecr.{region}.amazonaws.com
 
 Navigate to BaseImage folder - 
-docker build -t base-image:latest  .
+<div>
+  docker build -t base-image:latest  .
+</div>
+<div>
 docker tag base-image:latest {account}.dkr.ecr.{region}.amazonaws.com/base-image:latest
-docker push {account}.dkr.ecr.{region}.amazonaws.com/base-image:latest
-
+</div>
+<div>
+  docker push {account}.dkr.ecr.{region}.amazonaws.com/base-image:latest
+</div>
 Before building the image on local docker we have to create repository in ECR in AWS Console. 
 aws ecr create-repository --repository-name base-image
 
