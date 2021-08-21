@@ -1,0 +1,6 @@
+boto3
+numpy
+pandas
+scipy
+joblib
+matplotlib
