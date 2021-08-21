@@ -27,3 +27,5 @@ docker tag sampleimage:latest {account}.dkr.ecr.{region}.amazonaws.com/sampleima
 docker push {account}.dkr.ecr.{region}.amazonaws.com/sampleimage:latest
 
 We have to use valid values at places of {account} - account id , {region} - region of aws resources.
+
+We can write the proper business use case logic in samplefunction.py based on the requirement.
